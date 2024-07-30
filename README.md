@@ -19,6 +19,7 @@ Flight Status Tracker an ReactJS application designed to help users track the st
 ![Main Interface](./screenshots/main_interface.png)
 The main interface displays a list of flights with search and filter options.
 
+### Cancelled Flights
 ![Sort by Cancelled Flights](./screenshots/screenshots/Cancelled.png)
 
 ### Flight Details Modal
