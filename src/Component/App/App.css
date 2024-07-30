@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img{
+  width:5%;
+  border-radius: 60%;
+  height:3%;
+}
+
+.container {
+  background-color: #ffffffb2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4a90e2;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.filters-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Table Styles */
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.flight-table th, .flight-table td {
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.flight-table th {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.flight-table tr:hover {
+  cursor: pointer;
+}
+
+/* Status Styles */
+.status {
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Row Coloring Based on Status */
+.on-time {
+  background-color: #c7d6cc;
+}
+
+.delayed {
+  background-color: #f1bc0cc2;
+}
+
+.cancelled {
+  background-color: #f39ba4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  .flight-table th, .flight-table td {
+      padding: 10px 15px;
+  }
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button.active {
+  background-color: #357ab8;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #357ab8;
+}
+
+.search-container {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust gap between search input and select box */
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.status-container select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.status-container select:focus {
+  border-color: #4a90e2;
+  background-color: #f3f4f6;
+}
+
+.status-container select:hover {
+  border-color: #4a90e2;
+}
