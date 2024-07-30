@@ -26,6 +26,10 @@ The main interface displays a list of flights with search and filter options.
 ![Flight Details Modal](./screenshots/flight_details_modal.png)
 Clicking on a flight row opens a modal with detailed information about the selected flight.
 
+### Deployed Link
+
+Access the deployed application [here](https://indigohack-frontend-1.onrender.com/).
+
 ## Installation
 1. Clone the repository:
     ```sh
