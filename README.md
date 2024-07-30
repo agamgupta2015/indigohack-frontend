@@ -26,11 +26,11 @@ Clicking on a flight row opens a modal with detailed information about the selec
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/flight-status-tracker.git
+    git clone https://github.com/agamgupta2015/indigohack-frontend.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd flight-status-tracker
+    cd indigohack-frontend.git
     ```
 3. Install dependencies:
     ```sh
