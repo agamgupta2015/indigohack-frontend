@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Modal from '../Notify/Model';
 import './App.css';
-
+import Station from '../Station/station';
 const FLIGHTS_PER_PAGE = 4;
 
 function FlightStatus() {
@@ -21,7 +21,7 @@ function FlightStatus() {
     }, []);
 
     const fetchFlights = async () => {
-        const response = await axios.get('http://localhost:8000/flight/all');
+        const response = await axios.get('https://hackuser88-indigohack-backend-m0fi-code-redirect-3.apps.arolab37nonprod.goindigo.in/flight/all');
         setFlights(response.data);
     };
 
@@ -86,6 +86,7 @@ function FlightStatus() {
     return (
         <div className="container">
             <h1>Flight Status</h1>
+            <Station/>
             <div className="filters-container">
                 <div className="search-container">
                     <input
