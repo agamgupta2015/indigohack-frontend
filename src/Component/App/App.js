@@ -21,7 +21,7 @@ function FlightStatus() {
     }, []);
 
     const fetchFlights = async () => {
-        const response = await axios.get('https://hackuser88-indigohack-backend-m0fi-code-redirect-3.apps.arolab37nonprod.goindigo.in/flight/all');
+        const response = await axios.get('https://indigohack-backend-hackuser88.apps.arolab37nonprod.goindigo.in/flight/all');
         setFlights(response.data);
     };
 
